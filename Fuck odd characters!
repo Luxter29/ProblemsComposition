@@ -1,0 +1,4 @@
+/** Given an String, print it without its odd index characters, starting to count from 0, as in an array.
+*Input: First variable is an integer N, denoting N test cases. Then N test cases follow, each is a String.
+*Output: Print each String without its odd index characters.
+*/
