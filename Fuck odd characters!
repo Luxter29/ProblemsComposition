@@ -2,3 +2,22 @@
 *Input: First variable is an integer N, denoting N test cases. Then N test cases follow, each is a String.
 *Output: Print each String without its odd index characters.
 */
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class FuckOddCharacters {
+	public static void main (String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int t = sc.nextInt();
+	    for(int i = 0; i < t; i++) {
+	        String m = sc.next();
+	        int length = m.length();
+	        length = length % 2 == 0 ? length : length - 1;
+	        for(int index = 0; index < m.length(); index += 2) {
+	            System.out.print(m.charAt(index));
+	        }
+	        System.out.println();
+	    }
+	}
+}
