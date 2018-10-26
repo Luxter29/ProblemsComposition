@@ -1,0 +1,16 @@
+/** Pide tantos arrays por pantalla como T, de capacidad N, dales la vuelta e imprime cada uno en una línea.
+*INPUT: Primero lee una variable entera T, que denota el número de casos (arrays) que vas a tener que llevar a cabo.
+*Luego, lee el número que denota el size del array, y a continuación, el array de integers, con cada número separado por un espacio.
+*OUTPUT: imprime por consola cada array al revés, con los integers separados por un espacio.
+*
+*Ejemplo: 
+*2
+*5
+*1 2 3 4 5 
+*3
+*4 6 2
+*
+*OUTPUT:
+*5 4 3 2 1 
+*2 6 4          
+*/
