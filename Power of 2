@@ -1,0 +1,25 @@
+/** You are given for T test cases, a number, and you must say whether it is a power of 2 ("YES"), or not ("NO"). */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for(int a = 0; a < t; a++) {
+            boolean pow = false;
+            int n = sc.nextInt();
+            for(int exp = 1; !pow; exp++) {
+                if(n == Math.pow(2, exp)) {
+                    pow = true;
+                }
+                else if(n < Math.pow(2, exp)) {
+                    break;
+                }
+            }
+            System.out.println(pow ? "YES" : "NO");
+        }
+    }
+}
