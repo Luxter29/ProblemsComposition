@@ -14,3 +14,25 @@
 *5 4 3 2 1 
 *2 6 4          
 */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for(int a = 0; a < t; a++) {
+            int length = sc.nextInt();
+            int[] arr = new int[length];
+            for(int i = length; i > 0; ) {
+                arr[--i] = sc.nextInt();
+            }
+            for(int h = 0; h < length; h++) {
+                System.out.print(arr[h] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
